@@ -1,13 +1,11 @@
 import readlineSync from 'readline-sync';
-import { greeting, greetingPlayer, printTheRulesOfGame } from './cli.js';
+import greeting from './cli.js';
 
 const countSteps = 3;
 
 const engin = (rules, getData) => {
-  greeting();
-  const player = readlineSync.question('May I have your name? ');
-  greetingPlayer(player);
-  printTheRulesOfGame(rules);
+  const player = greeting();
+  console.log(rules);
   for (let i = 0; i < countSteps; i += 1) {
     const [question, answer] = getData();
     console.log('Question: ', question);

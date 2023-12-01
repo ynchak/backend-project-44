@@ -1,5 +1,5 @@
 import engin from '../index.js';
-import { getRandomInt } from '../utils.js';
+import getRandomInt from '../utils.js';
 
 const isEven = (number) => !(number % 2);
 
