@@ -11,9 +11,8 @@ const engine = (rules, getData) => {
     console.log('Question:', question);
     const playerAnswer = readlineSync.question('Your answer: ');
     if (answer !== playerAnswer) {
-      console.log(
-        `'${playerAnswer}' is wrong answer ;(. Correct answer was '${answer}'`
-      );
+      const message = `'${playerAnswer}' is wrong answer ;(. Correct answer was '${answer}'`;
+      console.log(message);
       console.log(`Let's try again, ${player}!`);
       return;
     }
