@@ -8,7 +8,7 @@ const engine = (rules, getData) => {
   console.log(rules);
   for (let i = 0; i < countSteps; i += 1) {
     const [question, answer] = getData();
-    console.log('Question: ', question);
+    console.log('Question:', question);
     const playerAnswer = readlineSync.question('Your answer: ');
     if (answer !== playerAnswer) {
       console.log(
