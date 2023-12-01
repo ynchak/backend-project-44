@@ -1,3 +1,6 @@
 #!/usr/bin/env node
-import greating from '../src/cli.js';
-greating();
+import { greetingGames, greetingPlayer, getPlayerName } from '../src/cli.js';
+
+greetingGames();
+const playerName = getPlayerName();
+greetingPlayer(playerName);

@@ -1,7 +1,12 @@
-import readlineSync from 'readline-sync';
-const greating = () => {
+const greeting = () => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}`);
 };
-export default greating;
+
+const greetingPlayer = (name) => {
+  console.log(`Hello, ${name}!`);
+};
+
+const printTheRulesOfGame = (rules) => {
+  console.log(rules);
+};
+export { greeting, greetingPlayer, printTheRulesOfGame };
