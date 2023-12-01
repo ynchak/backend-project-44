@@ -12,7 +12,7 @@ const getProgression = (length, startValue, addedNumber) => {
 };
 
 const getData = () => {
-  const lengthProgresion = getRandomInt(6) + getRandomInt(6);
+  const lengthProgresion = getRandomInt(10) + getRandomInt(6);
   const startValue = getRandomInt(100);
   const addedNumber = getRandomInt(10);
   const question = getProgression(lengthProgresion, startValue, addedNumber);
