@@ -1,4 +1,4 @@
-import engin from '../index.js';
+import engine from '../index.js';
 import getRandomInt from '../utils.js';
 
 const operations = ['+', '-', '*'];
@@ -30,6 +30,6 @@ const getData = () => {
 };
 const calc = () => {
   const rules = 'What is the result of the expression?';
-  engin(rules, getData);
+  engine(rules, getData);
 };
 export default calc;

@@ -3,7 +3,7 @@ import greeting from './cli.js';
 
 const countSteps = 3;
 
-const engin = (rules, getData) => {
+const engine = (rules, getData) => {
   const player = greeting();
   console.log(rules);
   for (let i = 0; i < countSteps; i += 1) {
@@ -22,4 +22,4 @@ const engin = (rules, getData) => {
   console.log(`Congratulations, ${player}!`);
 };
 
-export default engin;
+export default engine;

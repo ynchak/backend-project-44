@@ -1,4 +1,4 @@
-import engin from '../index.js';
+import engine from '../index.js';
 import getRandomInt from '../utils.js';
 
 const getGcd = (a, b) => {
@@ -20,7 +20,7 @@ const getData = () => {
 };
 const gcd = () => {
   const rules = 'Find the greatest common divisor of given numbers.';
-  engin(rules, getData);
+  engine(rules, getData);
 };
 
 export default gcd;
